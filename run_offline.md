@@ -6,7 +6,7 @@
   `scripts/run_offline.sh` files.
 
   ```
-  mkisofs -allow-limited-size -l -J -r -iso-level 3 -V InstallAssistant -o InstallAssistant.iso path/to/InstallAssistant.pkg scripts/run_offline.sh
+  mkisofs -l -J -r -iso-level 3 -V InstallAssistant -o InstallAssistant.iso path/to/InstallAssistant.pkg scripts/run_offline.sh
   ```
 
 * Add the following to your `OpenCore-Boot.sh`
