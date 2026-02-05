@@ -11,7 +11,7 @@ setup, so it's perfect if you just want internet but don't care about latency
 or about connecting to the VM from an external source.
 
 In order to do this, change the line in your qemu-system-x86_64 command (found
-in boot-macOS.sh) to the following:
+in OpenCore-Boot.sh) to the following:
 
 -netdev user,id=net0 -device network_adapter,netdev=net0,id=net0,mac=52:54:00:c9:18:27 \
 
@@ -61,7 +61,7 @@ sudo apt-get install uml-utilities virt-manager
 
 sudo ip tuntap add dev tap0 mode tap
 sudo ip link set tap0 up promisc on
-sudo brctl addif virbr0 tap0
+sudo ip link set dev tap0 master virbr0
 
 sudo ip link set dev virbr0 up  # as needed
 sudo ip link set dev tap0 master virbr0

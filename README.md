@@ -11,7 +11,9 @@ over email](mailto:dhiru.kholia@gmail.com?subject=[GitHub]%20OSX-KVM%20Commercia
 
 Struggling with `Content Caching` stuff? We can help.
 
-Working with `Proxmox` and macOS? See [Nick's blog for sure](https://www.nicksherlock.com/).
+Working with `Proxmox` and macOS:
+- See [Nick's blog for sure](https://www.nicksherlock.com/)
+- Here’s a more up-to-date version for `Proxmox` [OpenCore-ISO](https://github.com/LongQT-sea/OpenCore-ISO)
 
 Yes, we support offline macOS installations now - see [this document](./run_offline.md) 🎉
 
@@ -95,6 +97,7 @@ processors work just fine (even for macOS Sonoma).
   ```
 
   To make this change permanent, you may use the following command.
+  Use `lscpu` if you are not sure.
 
   ```
   sudo cp kvm.conf /etc/modprobe.d/kvm.conf  # for intel boxes only
@@ -134,10 +137,12 @@ processors work just fine (even for macOS Sonoma).
   3. Catalina (10.15)
   4. Big Sur (11.7)
   5. Monterey (12.6)
-  6. Ventura (13) - RECOMMENDED
-  7. Sonoma (14)
+  6. Ventura (13)
+  7. Sonoma (14) - RECOMMENDED
+  8. Sequoia (15)
+  9. Tahoe (26)
 
-  Choose a product to download (1-7): 6
+  Choose a product to download (1-9): 7
   ```
 
   Note: Modern NVIDIA GPUs are supported on HighSierra but not on later
